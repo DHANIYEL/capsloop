@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import Templates from "./templates";
 
-// Load multiple weights of NobelUno
 const NobelUno = localFont({
   src: [
     {
@@ -37,8 +37,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* Attach the font variable globally */}
-      <body className={`${NobelUno.variable} antialiased`}>{children}</body>
+      <body className={`${NobelUno.variable} antialiased`}>
+        <Templates>{children}</Templates>
+      </body>
     </html>
   );
 }
