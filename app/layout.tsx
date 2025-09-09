@@ -2,9 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 
-const cookMono = localFont({
-  src: "../public/fonts/CookGothif.ttf",
-  variable: "--font-cook-gothif-mono",
+// Load multiple weights of NobelUno
+const NobelUno = localFont({
+  src: [
+    {
+      path: "../public/fonts/NobelUno-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/NobelUno-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/NobelUno-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-nobel-uno",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +37,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${cookMono.className} antialiased`}>{children}</body>
+      {/* Attach the font variable globally */}
+      <body className={`${NobelUno.variable} antialiased`}>{children}</body>
     </html>
   );
 }
