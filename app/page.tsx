@@ -9,20 +9,20 @@ gsap.registerPlugin(SplitText);
 export default function Page() {
   useGSAP(() => {
     const splitTitle = new SplitText(".title", { type: "chars" });
-
+    gsap.set(splitTitle.chars, { yPercent: 100, opacity: 0 });
     gsap.to(splitTitle.chars, {
       yPercent: -100,
       duration: 0.5,
       opacity: 1,
       delay: 3,
       ease: "power2.out",
-      stagger: 0.05, // animate each char one by one
+      stagger: 0.05,
     });
   }, []);
 
   return (
     <div className="flex h-screen items-center justify-center">
-      <h1 className="title text-4xl text-brand-orange opacity-0">CAPS LOOP</h1>
+      <h1 className="title text-4xl text-brand-orange">CAPS LOOP</h1>
     </div>
   );
 }

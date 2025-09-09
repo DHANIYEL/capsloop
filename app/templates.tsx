@@ -10,12 +10,8 @@ export default function Templates({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="relative overflow-hidden">
-      {/* Foreground content with background */}
-      <div className="relative z-0 min-h-screen bg-brand-black">
-        {children}
-      </div>
+      <div className="relative z-0 min-h-screen bg-brand-black">{children}</div>
 
-      {/* Transition stripes (sit above, animate out) */}
       <div className="absolute inset-0">
         <div className="template-section-1 fixed inset-0 z-40 bg-brand-black" />
         <div className="template-section-2 fixed inset-0 z-30 bg-brand-orange" />

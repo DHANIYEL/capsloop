@@ -24,5 +24,5 @@ export const animatePageIn = () => {
     stagger: 0.2,
     duration: 0.6,
     ease: "power2.in",
-  }, "+=0.5");
+  }, "-=0.5");
 };
