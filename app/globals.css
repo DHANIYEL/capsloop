@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
-body {
-  @apply bg-gray-100;
+@theme {
+  --color-brand-black: #171717;
+  --color-brand-orange: #f25623;
+  --color-brand-light-gray: #dedede;
+  --color-brand-dark-gray: #4d4d4d4d;
 }
 
 .nobel-uno-font {

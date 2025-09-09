@@ -1,15 +1,9 @@
-import React from "react";
-
-const page = () => {
+export default function Page() {
   return (
-    <div className="flex flex-col gap-4 justify-center items-center text-5xl w-full h-screen">
-      <p className="nobel-uno-font font-light">Light text</p>
-      <p className="nobel-uno-font font-normal">Regular text</p>
-      <p className="nobel-uno-font font-bold leading-tight tracking-tighter">
-        Bold text
-      </p>
+    <div className="nobel-uno-font h-screen w-screen flex flex-col items-center justify-center bg-brand-black text-brand-orange">
+      <h1 className="text-6xl">CAPSLOOP Regular</h1>
+      <h1 className="text-6xl font-bold ">CAPSLOOP Bold</h1>
+      <h1 className="text-6xl font-light">CAPSLOOP Light</h1>
     </div>
   );
-};
-
-export default page;
+}
