@@ -21,3 +21,4 @@ export default function Templates({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
+
