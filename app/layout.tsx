@@ -24,6 +24,17 @@ const NobelUno = localFont({
   variable: "--font-nobel-uno",
   display: "swap",
 });
+const CookGothif = localFont({
+  src: [
+    {
+      path: "../public/fonts/CookGothif.ttf",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  variable: "--font-cook-gothif",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Caps Loop",
@@ -37,7 +48,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${NobelUno.variable} antialiased`}>
+      <body
+        className={`${NobelUno.variable} ${CookGothif.variable} antialiased`}
+      >
         <Templates>{children}</Templates>
       </body>
     </html>
