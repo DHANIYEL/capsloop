@@ -65,7 +65,7 @@ export default function SplashCursor({
   SPLAT_FORCE = 6000,
   SHADING = true,
   COLOR_UPDATE_SPEED = 5, // ↓ smoother color change
-  BACK_COLOR = { r: 0, g: 0, b: 0 },
+  BACK_COLOR = { r: 0.988, g: 0.988, b: 0.957 }, // same as #FCFCF4
   TRANSPARENT = true,
 }: SplashCursorProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -1358,12 +1358,32 @@ export default function SplashCursor({
       return delta;
     }
 
+    // function generateColor(): ColorRGB {
+    //   const c = HSVtoRGB(Math.random(), 1.0, 1.0);
+    //   c.r *= 0.15;
+    //   c.g *= 0.15;
+    //   c.b *= 0.15;
+    //   return c;
+    // }
+
     function generateColor(): ColorRGB {
-      const c = HSVtoRGB(Math.random(), 1.0, 1.0);
-      c.r *= 0.15;
-      c.g *= 0.15;
-      c.b *= 0.15;
-      return c;
+      // Pick one of your brand colors below by uncommenting
+      // or change to random selection between them
+
+      // --- Single color (choose one) ---
+      // return { r: 0.090, g: 0.090, b: 0.090 }; // brand black (#171717)
+      // return { r: 0.949, g: 0.337, b: 0.137 }; // brand orange (#f25623)
+      // return { r: 0.988, g: 0.988, b: 0.957 }; // brand light gray (#FCFCF4)
+      // return { r: 0.302, g: 0.302, b: 0.302 }; // brand dark gray (#4d4d4d)
+
+      // --- Optional: random among brand palette ---
+      const palette: ColorRGB[] = [
+        { r: 0.09, g: 0.09, b: 0.09 }, // black
+        { r: 0.949, g: 0.337, b: 0.137 }, // orange
+        { r: 0.988, g: 0.988, b: 0.957 }, // light gray
+        { r: 0.302, g: 0.302, b: 0.302 }, // dark gray
+      ];
+      return palette[Math.floor(Math.random() * palette.length)];
     }
 
     function HSVtoRGB(h: number, s: number, v: number): ColorRGB {
