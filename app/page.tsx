@@ -24,7 +24,7 @@ export default function Page() {
 
   return (
     <div className="flex h-screen items-center justify-center">
-      <SplashCursor />
+      {/* <SplashCursor /> */}
 
       {/* <NavBar /> */}
       {/* <img src="https://unblast.com/wp-content/uploads/2018/08/Gradient-Mesh-30-1600x1200.jpg
