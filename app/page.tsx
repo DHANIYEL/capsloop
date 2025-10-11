@@ -29,7 +29,7 @@ export default function Page() {
       {/* <NavBar /> */}
       {/* <img src="https://unblast.com/wp-content/uploads/2018/08/Gradient-Mesh-30-1600x1200.jpg
 " alt="" /> */}
-      <h1 className="title text-9xl cook-gothif-font z-0 text-brand-orange">
+      <h1 className="title text-9xl max-md:text-6xl cook-gothif-font z-0 text-brand-orange">
         CAPS LOOP
       </h1>
     </div>
