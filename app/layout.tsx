@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import localFont from "next/font/local";
-import Templates from "./templates";
+import "./globals.css";
 
 const NobelUno = localFont({
   src: [
@@ -51,7 +50,7 @@ export default function RootLayout({
       <body
         className={`${NobelUno.variable} ${CookGothif.variable} antialiased`}
       >
-        <Templates>{children}</Templates>
+        {children}
       </body>
     </html>
   );
