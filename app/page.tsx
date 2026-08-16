@@ -191,11 +191,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo Space - Reserved for custom logo */}
           <div className="flex items-center gap-3">
-            {/* <div className="border border-dashed border-orange-primary/60 rounded px-3 py-1 bg-orange-primary/5 select-none transition-colors hover:bg-orange-primary/10">
+            <div className="border border-dashed border-orange-primary/60 rounded px-3 py-1 bg-orange-primary/5 select-none transition-colors hover:bg-orange-primary/10">
               <span className="text-xs text-orange-primary font-mono tracking-wider">
                 [ LOGO SPACE ]
               </span>
-            </div> */}
+            </div>
             {/* <span className="font-extrabold text-xl tracking-tight">
               caps<span className="text-orange-primary">loop</span>
             </span> */}
