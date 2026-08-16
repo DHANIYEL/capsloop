@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "capsloop | Web & App Development, Graphics & Video Editing Agency",
-  description: "capsloop is a premier digital agency specializing in high-performance Web Development, Mobile Applications, Graphics Design, and Video Editing. Check out our products like ZeTap.",
+  title: "Capsloop | Web & App Development, Graphics & Video Editing Agency",
+  description:
+    "capsloop is a premier digital agency specializing in high-performance Web Development, Mobile Applications, Graphics Design, and Video Editing. Check out our products like ZeTap.",
   keywords: [
     "Web Development",
     "App Development",
@@ -24,12 +25,13 @@ export const metadata: Metadata = {
     "ZeTap",
     "capsloop",
     "SEO Agency",
-    "Software Development"
+    "Software Development",
   ],
   authors: [{ name: "capsloop team" }],
   openGraph: {
     title: "capsloop | Premier Web & App Agency",
-    description: "High-performance digital services and custom software products.",
+    description:
+      "High-performance digital services and custom software products.",
     url: "https://capsloop.com",
     siteName: "capsloop",
     locale: "en_US",
@@ -37,8 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "capsloop | Premier Web & App Agency",
-    description: "High-performance digital services and custom software products.",
+    title: "Capsloop | Premier Web & App Agency",
+    description:
+      "High-performance digital services and custom software products.",
   },
 };
 
